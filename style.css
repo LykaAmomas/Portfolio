@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(115deg, #c5f9d7, #f7d486, #f27a7d);
+  background-size: auto;
+  background-attachment: center;
+  position: center;
+}
+
+
+
+<!---MGA BUTTON--->
+
+.header {
+  position: fixed;
+  top: 20;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar-container {
+  flex-grow: 1; /* Allow the navbar container to take up available space */
+  display: flex; /* Use flexbox for the navbar container */
+  justify-content: center; /* Center the nav items */
+}
+
+.navbar {
+  display: flex; /* Use flexbox for the navbar */
+  justify-content: center; /* Center the nav items */
+}
+
+.navbar a {
+  display: inline-block;
+  color: rgb(1, 1, 1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: #070303;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  background-color: #58b056;
+  color: black;
+  border-radius: dashed;
+}
+
+
+.navbar a.active {
+  background-color: #9bdcc4;
+  color: white;
+}
+
+
+<!---huu-->
+.div-pf {
+    position: none;
+    height: 20px; 
+    width: 100%; 
+    margin-top: 30px;
+}
+
+
+.pf-h1 a {
+    text-decoration: none;
+    text-align: justify;
+    margin-left: 25px;
+    font-size: 18px;
+
+}
+
+section.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 100px;
+  height: 100vh;
+  width: none;
+  min-height: 100vh;
+  padding: 50px 100px;
+}
+
+.home.content {
+  flex: 1;
+  max-width: 500px;
+  text-align: justify;
+}
+
+.name-text {
+  color: rgb(11, 11, 11);
+  font-size: 30px;
+  text-shadow: 0 0 10px rgba(230, 235, 228, 0.7), 0 0 20px rgba(82, 131, 148, 0.7), 0 0 30px rgba(77, 243, 11, 0.7), 0 0 40px rgba(77, 243, 11, 0.7), 0 0 50px rgba(77, 243, 11, 0.7);
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+
+.content p {
+    font-family: "Roboto Condensed";
+    font-size: larger;
+    font-style: bold;
+}
+
+.section-home h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: 'Dancing Script', cursive;
+}
+
+.home .content h2 {
+    text-size-adjust: 10px;
+    text-shadow: 1px 1px 2px black;
+    color: #000000;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 4px 4px 6px rgba(103,175,224,0.91) ;
+}
+
+.home .content h1 {
+    color: #ffb700;
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(153, 37, 37), 0 0 5px rgb(48, 48, 181);
+    letter-spacing: 3px;
+    font-family: "Platypi";
+}
+
+
+.home-img {
+  /* margin-left: 800px;
+  margin-top: -480px; */
+  margin-top: 5rem;
+  margin-right: -5rem;
+  z-index: -1;
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+.home-img img {
+  width: 30vw;
+  animation: floatImage 4s ease-in-out infinite;
+  -webkit-animation: floatImage 4s ease-in-out infinite;
+  max-width: 90%;
+  height: 400px;
+  border: 10px solid #7fe99a;
+  border-style:double;
+  border-radius: 10px 40px;
+}
+
+.section-about {
+    display: fill;
+    align-items: left;
+    padding: 50px;
+    width: auto;
+}
+
+.section-about h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 30px;
+  font-weight:900;
+  font-family: 'Dancing Script', cursive;
+}
+
+.a-about:hover {
+    color: #000000;
+    transform: translateY(1.5px);
+}
+
+.content{
+  align-content: center;
+}
+
+<!--ed-->
+.section-education {
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in the height calculation */
+  display:fill;
+}
+
+.container-education .p{
+  text-align: center;
+}
+
+.container-education {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically within the container */
+  margin-bottom: 50vh;
+}
+
+.ed-img {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center images both horizontally and vertically */
+}
+
+.ed-img img {
+  height: 340px;
+  margin: 15px;
+  animation: showup 2s;
+  border-radius: 20px;
+}
+
+@keyframes showup {
+  from { height: 0; }
+  to { height: 200px; }
+}
+
+.ed-img .ed1,
+.ed-img .ed2,
+.ed-img .ed3 {
+  transition: all 0.5s;
+  min-height: max-content;
+}
+
+.ed-img .ed1:hover,
+.ed-img .ed2:hover,
+.ed-img .ed3:hover {
+  height: 240px;
+  transform: scale(1.2);
+  box-shadow: 10px 10px 20px black;
+}
+
+
+
+::selection{
+  background-color: #000;
+  color: #129cff;
+}
+
+.section-skills .header2 .h1{
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 30px;
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container{
+  width: 500px;
+  height: 500px;
+  padding: 30px 30px;
+  margin-left: 70px;
+}
+
+
+.heading{
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+
+.horizontal-bars .bar{
+  margin: 50px 0;
+  position: left;
+}
+.horizontal-bars .bar:first-child{
+  margin-top: 0;
+}
+.horizontal-bars .bar:last-child{
+  margin-bottom: 0;
+}
+.horizontal-bars .bar .info{
+  margin-bottom: 5px;
+}
+.horizontal-bars .bar .info span{
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;   
+  opacity: 0;
+}
+
+.horizontal-bars .bar .progress-line{
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+@keyframes animate{
+  100%{
+      transform: scaleX(1);
+  }
+}
+.horizontal-bars .bar .progress-line span{
+  height: 100%;
+  background-color: #129cff;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.progress-line.html span{
+  width: 90%;
+}
+.progress-line.css span{
+  width: 60%;
+}
+.progress-line.jquery span{
+  width: 85%;
+}
+.progress-line.python span{
+  width: 50%;
+}
+.progress-line.mysql span{
+  width: 75%;
+}
+
+.progress-line span::after{
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;   
+  opacity: 0;
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "60%";
+}
+.progress-line.jquery span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+  content: "75%";
+}
+.progress-line span::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color:#000;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;   
+  opacity: 0;
+}
+@keyframes showText{
+  100%{
+      opacity: 1;
+  }
+}
+
+.radial-bars{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.radial-bars .radial-bar{
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.radial-bars .radial-bar svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+  100%{
+      stroke-dashoffset: -1;
+  }
+}
+.path{
+  stroke-width: 10;
+  stroke: #129cff;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+
+@keyframes  animate-path1{
+  100%{
+  stroke-dashoffset: 50;
+  }
+}
+@keyframes  animate-path2{
+  100%{
+  stroke-dashoffset: 175;
+  }
+}
+@keyframes  animate-path3{
+  100%{
+  stroke-dashoffset: 125;
+  }
+}
+@keyframes  animate-path4{
+  100%{
+  stroke-dashoffset: 75;
+  }
+}
+
+.radial-bar .percentage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+
+}
+.radial-bar .text{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+
+
+
+<!---hobbies-->
+.hobbies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-hobbies {
+  display: fill;
+  align-items: left;
+  padding: 60px;
+  width: auto;
+}
+
+.section-hobbies h1{
+text-align: center;
+color: #000000;
+font-size: 25px;
+}
+
+.p-img img {
+  height: 300px;
+  margin-top: 100px;
+  border: 10px solid #000000;
+  border-style:double;
+  border-radius: 60px 40px;
+}
+
+@keyframes showup {
+  from {height: 0;}
+  to {height: 100px;}
+}
+
+.p-img .HDance,
+.p-img .HWatching,
+.p-img .HTravelling {
+  transition: all 0.5s;
+}
+
+.p-img .HDance:hover,
+.p-img .HWatching:hover,
+.p-img .HTravelling:hover {
+  height: 200px;
+  transform: scale(1.2);
+  box-shadow: 10px 10px 20px black;
+}
+
+
+
+.section-Photo {
+    background-size: cover;
+    text-align: center;
+    padding-top: 72px;
+    height: 109vh;
+    width: auto;
+}
+
+.section-photo h1{
+text-align: center;
+color: #000000;
+font-size: 25px;
+}
+
+.container-photo {
+    color: rgb(0, 0, 0);
+}
+
+.photo-img img  {
+    height: 340px;
+    margin-left: 15px;
+    animation: showup 2s;
+    border-radius: 20px;
+}
+
+@keyframes showup {
+    from {height: 0;}
+    to {height: 400px;}
+}
+
+.photo-img .ab1 {
+    transition: all 0.5s;
+}
+
+.photo-img .ab1:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px black;
+}
+
+.photo-img .ab2 {
+    transition: all 0.5s;
+}
+
+.photo-img .ab2:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px black;
+}
+
+.photo-img .ab3 {
+    transition: all 0.5s;
+}
+
+.photo-img .ab3:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 10px 20px black; 
+}
+
+.section-Contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.section-Contact h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 30px;
+  font-weight:900;
+}
+
+.container.contactInfo.box {
+  display: flex;
+  position: relative;
+  padding: 10px 0;
+  align-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  align-items: center;
+}
+
+input[placeholder="Your name.."],
+input[placeholder="Your last name.."],
+input[placeholder="Your email.."],
+input[placeholder="Write something.."]{
+  text-align:center;
+  font-family: arial;
+  font-size: xx-small;
+  box-sizing: border-box;
+}
+
+
+label[for="fname"],
+label[for="lname"],
+label[for="email"],
+label[for="type your message"]{
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #2f2b2b;
+  border-radius: 20%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  width: 500px;
+  min-height: 100vh;
+  padding: 50px 100px;
+}
+
+.footer {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-wrap: wrap; /* Allow items to wrap within the footer */
+  padding: 1rem 9%;
+  background: var(--second-bg-color);
+  text-align: center; /* Center-align text within elements */
+}
+
+.footer-text p {
+  font-size: 1.0rem;
+  margin: 0; /* Remove default margin */
+}
+
+.footer-text a {
+  margin: 0 10px; /* Add spacing between icons */
+  color: inherit; /* Inherit color for icons */
+}
+
+.footer-iconTop {
+  margin-top: 1rem; /* Add some spacing from the text and icons */
+}
+
+.footer-iconTop a {
+  display: flex; /* Use flexbox to center the icon within the link */
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: var(--main-color);
+  border-radius: 0.5rem;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+}
+
