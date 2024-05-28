@@ -30,18 +30,6 @@ body {
   z-index: 1000;
 }
 
-.logo {
-  width: 1px; /* Adjust the width to your desired size */
-  height: auto;
-  top: 30%; /* Center vertically */
-  left: 10px; /* Adjust the left position as needed */
-}
-
-.logo img {
-  width: 100px; /* Adjust the width to your desired size */
-  height: auto;
-}
-
 .navbar-container {
   flex-grow: 1; /* Allow the navbar container to take up available space */
   display: flex; /* Use flexbox for the navbar container */
